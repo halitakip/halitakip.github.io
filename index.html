@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    PetraPOS – Halı Takip Programı ve Halı Yıkama Takip Uygulaması
-  </title>
+  <title>Halı Takip Programı - Halı Yıkama Takip Uygulaması | PetraPOS</title>
 
   <meta name="description"
-    content="PetraPOS Halı Takip Programı ile halı yıkama işletmeleri sipariş, müşteri ve teslimat süreçlerini mobil uygulama üzerinden kolayca yönetir. iOS ve Android için ücretsiz." />
+    content="Halı takip programı ile halı yıkama işletmenizi dijitalleştirin. Sipariş takibi, müşteri yönetimi, teslimat takip ve raporlama. Halı yıkama sipariş takip uygulaması iOS ve Android'de ücretsiz." />
+
+  <meta name="keywords" content="halı takip, halı takip programı, halı yıkama programı, halı yıkama sipariş takip, halı yıkama otomasyon, halı temizleme programı, halı yıkama uygulaması" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="PetraPOS – Halı Takip Programı ve Halı Yıkama Takip Uygulaması" />
+  <meta property="og:title" content="Halı Takip Programı - Halı Yıkama Takip Uygulaması | PetraPOS" />
   <meta property="og:description"
     content="Halı yıkama işletmenizi dijitalleştirin. Sipariş takibi, müşteri yönetimi ve raporlama. iOS & Android" />
   <meta property="og:type" content="website" />
@@ -21,7 +21,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="PetraPOS – Halı Takip Programı" />
+  <meta name="twitter:title" content="Halı Takip Programı | PetraPOS" />
   <meta name="twitter:description" content="Halı yıkama işletmenizi dijitalleştirin" />
 
   <!-- Canonical points to main site -->
@@ -33,225 +33,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="google-site-verification" content="8-rnC7n37FQE5cwpsF-MTRcojmYxYi54UY0OktmXGyM" />
-  <!-- Critical CSS - Inline for faster FCP -->
-  <style>
-    /* Reset & Base */
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    html {
-      font-size: 16px;
-      -webkit-text-size-adjust: 100%;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-        'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-      background: #fff;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Typography */
-    h1,
-    h2,
-    h3 {
-      line-height: 1.2;
-      font-weight: 700;
-      margin: 1.5rem 0 1rem;
-    }
-
-    h1 {
-      font-size: clamp(1.75rem, 5vw, 2.5rem);
-      color: #0066cc;
-      margin-bottom: 1.5rem;
-    }
-
-    h2 {
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      color: #333;
-      border-bottom: 2px solid #0066cc;
-      padding-bottom: 0.5rem;
-    }
-
-    h3 {
-      font-size: clamp(1.25rem, 3vw, 1.5rem);
-      color: #555;
-    }
-
-    p {
-      margin: 1rem 0;
-    }
-
-    strong {
-      color: #0066cc;
-      font-weight: 600;
-    }
-
-    /* Header */
-    header {
-      text-align: center;
-      padding: 2rem 0;
-      border-bottom: 1px solid #e0e0e0;
-      margin-bottom: 2rem;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    /* Main Content */
-    main {
-      padding: 1rem 0;
-    }
-
-    section {
-      margin: 2rem 0;
-    }
-
-    /* Links */
-    a {
-      color: #0066cc;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    a:hover {
-      color: #0052a3;
-      text-decoration: underline;
-    }
-
-    a:focus {
-      outline: 2px solid #0066cc;
-      outline-offset: 2px;
-    }
-
-    /* CTAs */
-    .cta-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin: 1.5rem 0;
-    }
-
-    .cta-btn {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.75rem 1.5rem;
-      background: #0066cc;
-      color: #fff !important;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none !important;
-      transition: background 0.2s, transform 0.1s;
-    }
-
-    .cta-btn:hover {
-      background: #0052a3;
-      transform: translateY(-2px);
-    }
-
-    .cta-btn:active {
-      transform: translateY(0);
-    }
-
-    .cta-btn.secondary {
-      background: #fff;
-      color: #0066cc !important;
-      border: 2px solid #0066cc;
-    }
-
-    .cta-btn.secondary:hover {
-      background: #f0f7ff;
-    }
-
-    /* Features List */
-    .features-list {
-      list-style: none;
-      margin: 1.5rem 0;
-    }
-
-    .features-list li {
-      padding: 0.75rem 0 0.75rem 2rem;
-      position: relative;
-      margin: 0.5rem 0;
-    }
-
-    .features-list li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: #0066cc;
-      font-weight: bold;
-      font-size: 1.25rem;
-    }
-
-    /* Stats/Highlights */
-    .highlight-box {
-      background: #f0f7ff;
-      border-left: 4px solid #0066cc;
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-      border-radius: 4px;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid #e0e0e0;
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      body {
-        padding: 15px;
-      }
-
-      .cta-group {
-        flex-direction: column;
-      }
-
-      .cta-btn {
-        width: 100%;
-        justify-content: center;
-      }
-    }
-
-    /* Accessibility */
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        animation: none !important;
-        transition: none !important;
-      }
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/styles.css" />
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -289,171 +73,219 @@
 
 <body>
   <header>
-    <a href="https://petrapos.com" class="logo" aria-label="PetraPOS Ana Sayfa">
-      PetraPOS
-    </a>
+    <div class="header-content">
+      <a href="/" class="logo" aria-label="Halı Takip Programı Ana Sayfa">
+        🧹 PetraPOS
+      </a>
+      <button class="menu-toggle" aria-label="Menüyü Aç" onclick="document.querySelector('nav').classList.toggle('active')">
+        ☰
+      </button>
+      <nav>
+        <a href="/" class="active">Ana Sayfa</a>
+        <a href="/ozellikler/">Özellikler</a>
+        <a href="/fiyatlandirma/">Fiyatlandırma</a>
+        <a href="/iletisim/">İletişim</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <article>
-      <h1>PetraPOS – Halı Takip Programı ve Halı Yıkama Takip Uygulaması</h1>
-
-      <div class="highlight-box">
+    <div class="container">
+      <section class="hero">
+        <h1>Halı Takip Programı ve Halı Yıkama Sipariş Takip Uygulaması</h1>
         <p>
-          <strong>PetraPOS</strong>
-          , halı yıkama işletmeleri için geliştirilmiş modern bir
-          <strong>halı takip uygulamasıdır</strong>
-          . Sipariş takibi, müşteri yönetimi ve teslimat süreçlerini tek bir
-          mobil panel üzerinden yönetmenizi sağlar.
+          Halı yıkama işletmenizi dijitalleştirin. <strong>PetraPOS</strong> ile sipariş takibi, 
+          müşteri yönetimi ve teslimat süreçlerinizi tek platformdan yönetin.
         </p>
-      </div>
-
-      <div class="cta-group">
-        <a href="https://apps.apple.com/tr/app/petrapos/id6744338657" class="cta-btn" target="_blank" rel="noopener">
-          📱 App Store'dan İndir
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.innodra.petrapos" class="cta-btn" target="_blank"
-          rel="noopener">
-          🤖 Google Play'den İndir
-        </a>
-        <a href="https://petrapos.com" class="cta-btn secondary">
-          🌐 Resmi Website
-        </a>
-      </div>
-
-      <section>
-        <h2>Halı Yıkama Takip Programı Nedir?</h2>
-        <p>
-          <strong>Halı yıkama takip programı</strong>, halı yıkama işletmelerinin
-          sipariş, müşteri ve teslimat süreçlerini dijital ortamda yönetmesini
-          sağlayan modern bir yazılım çözümüdür. PetraPOS ile tüm operasyonlarınızı
-          mobil cihazınızdan kontrol edebilirsiniz.
-        </p>
-
-        <h3>Temel Özellikler</h3>
-        <ul class="features-list">
-          <li>
-            <strong>Sipariş yönetimi</strong>
-            – Siparişleri takip edin, hizmetleri planlayın ve müşteri
-            taleplerini verimli bir şekilde yönetin
-          </li>
-          <li>
-            <strong>Müşteri veritabanı</strong>
-            – Müşteri kayıtlarını, geçmişini ve tercihlerini tek bir yerde
-            tutun
-          </li>
-          <li>
-            <strong>Finansal takip</strong>
-            – Gelir, gider ve detaylı finansal raporları takip edin
-          </li>
-          <li>
-            <strong>Yazıcı entegrasyonu</strong>
-            – Sipariş fişlerini ve etiketlerini entegre yazıcı özellikleriyle
-            kolayca yazdırın
-          </li>
-          <li>
-            <strong>Arayan kimliği</strong>
-            – Müşterilerinizi aradıklarında anında tanıyın, yanıt süresini ve
-            hizmet kalitesini artırın
-          </li>
-          <li>
-            <strong>Çoklu telefon numarası</strong>
-            – Her müşteri için birden fazla telefon numarası kaydedip yönetin
-          </li>
-          <li>
-            <strong>Çoklu hesap yönetimi</strong>
-            – Birden fazla işletmeyi tek platformdan yönetin
-          </li>
-          <li>
-            <strong>Gelişmiş yetkilendirme</strong>
-            – Çalışanların erişim yetkilerini detaylı bir şekilde yönetin
-          </li>
-          <li>
-            <strong>Çoklu araç sistemi</strong>
-            – Araçları çalışanlara atayın, teslimat süreçlerini kusursuz hale
-            getirin
-          </li>
-        </ul>
+        <div class="cta-group">
+          <a href="https://apps.apple.com/tr/app/petrapos/id6744338657" class="cta-btn" target="_blank" rel="noopener">
+            📱 App Store'dan İndir
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.innodra.petrapos" class="cta-btn" target="_blank" rel="noopener">
+            🤖 Google Play'den İndir
+          </a>
+          <a href="/ozellikler/" class="cta-btn secondary">
+            ✨ Özellikleri Keşfet
+          </a>
+        </div>
       </section>
 
       <section>
-        <h2>Halı Yıkama Otomasyon Yazılımı</h2>
-
+        <h2>Halı Takip Programı Nedir?</h2>
         <p>
-          PetraPOS, halı yıkama işletmenizi otomatikleştiren kapsamlı bir
-          <strong>halı yıkama otomasyon yazılımıdır</strong>. Manuel süreçleri
-          dijitalleştirerek işletmenizin verimliliğini artırır.
+          <strong>Halı takip programı</strong>, halı yıkama ve halı temizleme işletmelerinin 
+          müşteri siparişlerini, teslimat süreçlerini ve finansal işlemlerini dijital ortamda 
+          yönetmesini sağlayan modern bir yazılım çözümüdür. <strong><a href="https://petrapos.com" target="_blank">PetraPOS</a> halı yıkama programı</strong> 
+          ile tüm operasyonlarınızı mobil cihazınızdan kontrol edebilirsiniz.
         </p>
 
-        <h3>İşletmenizi büyütmek için ihtiyacınız olan tüm araçlar</h3>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📋</div>
+            <h3>Sipariş Takibi</h3>
+            <p>
+              Halı yıkama siparişlerinizi kolayca takip edin. <a href="https://petrapos.com" target="_blank">Halı takip</a> durumları, 
+              teslim tarihleri ve özel notlar tek ekrandan yönetin.
+            </p>
+          </div>
 
-        <ul class="features-list">
-          <li>
-            <strong>Detaylı raporlama</strong>
-            – İşletme performansınızı takip etmek ve analiz etmek için
-            kapsamlı raporlama araçları
-          </li>
-          <li>
-            <strong>Yüksek performanslı altyapı</strong>
-            – Dünya çapında hızlı ve güvenilir hizmet sunan kurumsal düzeyde
-            altyapı
-          </li>
-          <li>
-            <strong>Akıcı ve yenilikçi kullanıcı arayüzü</strong>
-            – Kesintisiz çalışma için tasarlanmış modern ve yenilikçi arayüz
-          </li>
-          <li>
-            <strong>Sürdürülebilir çözümler</strong>
-            – İşletmenizle birlikte büyüyen uzun vadeli, sürdürülebilir
-            çözümler
-          </li>
-        </ul>
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>Müşteri Yönetimi</h3>
+            <p>
+              Müşteri bilgilerini, sipariş geçmişini ve tercihlerini güvenle saklayın. 
+              Arayan kimliği ile müşterinizi anında tanıyın.
+            </p>
+          </div>
 
-        <p>
-          PetraPOS, halı yıkama süreçlerini dijitalleştirerek işletmelerin
-          daha hızlı ve düzenli çalışmasını hedefler. Kağıt işlerden kurtulun,
-          tüm operasyonlarınızı mobil cihazınızdan yönetin.
-        </p>
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Finansal Takip</h3>
+            <p>
+              Gelir, gider ve kâr raporlarınızı anlık olarak görüntüleyin. 
+              İşletme performansınızı detaylı analiz edin.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Teslimat Yönetimi</h3>
+            <p>
+              Araçlarınızı ve sürücülerinizi yönetin. Teslimat rotalarını optimize edin, 
+              zamanında teslimat sağlayın.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🖨️</div>
+            <h3>Yazıcı Entegrasyonu</h3>
+            <p>
+              Sipariş fişlerini ve barkod etiketlerini doğrudan uygulamadan yazdırın. 
+              Bluetooth yazıcı desteği.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Detaylı Raporlama</h3>
+            <p>
+              Günlük, haftalık ve aylık raporlarınızı alın. Satış trendlerini 
+              ve performansınızı takip edin.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section>
-        <h2>Halı Yıkama Mobil Uygulaması</h2>
-        <p>
-          <strong>Halı yıkama mobil uygulaması</strong> ile işletmenizi her yerden
-          yönetin. iOS ve Android uyumlu PetraPOS, halı yıkama takip süreçlerinizi
-          otomatikleştirerek zaman kazandırır. Müşteri memnuniyetini artırın,
-          operasyonel verimliliği yükseltin.
-        </p>
+        <h2>Neden <a href="https://petrapos.com" target="_blank">Halı Yıkama Takip Programı</a> Kullanmalısınız?</h2>
+
         <div class="highlight-box">
-          <h3>✨ İşletmenizi Yönetmek İçin İhtiyacınız Olan Her Şey</h3>
+          <strong>📈 Verimliliği Artırın</strong>
           <p>
-            Sipariş yönetiminden finansal takibe, müşteri veritabanından araç
-            yönetimine kadar tüm süreçlerinizi tek bir platformda kontrol
-            edin. Çoklu hesap yönetimi ile birden fazla şubeyi kolayca
-            yönetin.
+            Kağıt işlerden kurtulun, manuel hataları minimize edin. Tüm işlemlerinizi 
+            dijital ortamda gerçekleştirerek zamandan tasarruf edin.
+          </p>
+        </div>
+
+        <ul class="features-list">
+          <li>
+            <strong>Hızlı sipariş kaydı:</strong> Yeni siparişleri dakikalar içinde sisteme kaydedin
+          </li>
+          <li>
+            <strong>Otomatik fiyat hesaplama:</strong> Halı boyutları ve hizmet türüne göre otomatik fiyatlandırma
+          </li>
+          <li>
+            <strong>SMS bildirimleri:</strong> Müşterilerinize otomatik SMS gönderin
+          </li>
+          <li>
+            <strong>Arayan kimliği:</strong> Müşteri ararken tüm bilgileri ekranda görün
+          </li>
+          <li>
+            <strong>Çoklu hesap desteği:</strong> Birden fazla şubeyi tek platformdan yönetin
+          </li>
+          <li>
+            <strong>Yetkilendirme sistemi:</strong> Çalışanlarınızın erişim yetkilerini belirleyin
+          </li>
+          <li>
+            <strong>Bulut yedekleme:</strong> Verileriniz güvenli sunucularda otomatik yedeklenir
+          </li>
+          <li>
+            <strong>Mobil erişim:</strong> İOS ve Android cihazlardan her yerden erişin
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Halı Yıkama Programı Özellikleri</h2>
+        <p>
+          <strong>PetraPOS halı yıkama sipariş takip uygulaması</strong>, halı temizleme işletmenizin 
+          tüm ihtiyaçlarını karşılamak üzere tasarlanmış kapsamlı özellikler sunar.
+        </p>
+
+        <h3>Sipariş ve Müşteri Yönetimi</h3>
+        <ul class="features-list">
+          <li>Sipariş oluşturma, düzenleme ve iptal işlemleri</li>
+          <li>Müşteri kartları ve sipariş geçmişi</li>
+          <li>Çoklu telefon numarası desteği</li>
+          <li>Özel notlar ve hatırlatıcılar</li>
+          <li>Hızlı arama ve filtreleme</li>
+        </ul>
+
+        <h3>Operasyonel Araçlar</h3>
+        <ul class="features-list">
+          <li>Barkod ve QR kod okuma</li>
+          <li>Bluetooth yazıcı entegrasyonu</li>
+          <li>Araç ve sürücü yönetimi</li>
+          <li>Stok takibi</li>
+          <li>Çalışan performans takibi</li>
+        </ul>
+
+        <h3>Raporlama ve Analiz</h3>
+        <ul class="features-list">
+          <li>Günlük kasa raporları</li>
+          <li>Aylık gelir-gider analizi</li>
+          <li>Müşteri bazlı raporlar</li>
+          <li>Hizmet türü performans analizi</li>
+          <li>Excel ve PDF export</li>
+        </ul>
+
+        <div class="cta-group">
+          <a href="/ozellikler/" class="cta-btn">Tüm Özellikleri Görüntüle</a>
+          <a href="/fiyatlandirma/" class="cta-btn secondary">Fiyatlandırma</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Sıkça Sorulan Sorular</h2>
+        
+        <div class="highlight-box">
+          <h3>Halı takip programı avantajları nelerdir?</h3>
+          <p>
+            PetraPOS ile tüm süreçlerinizi dijitalleştirerek zaman kazanırsınız. 
+            Müşteri memnuniyetini artırır ve işletme verimliliğinizi maksimize edersiniz.
           </p>
         </div>
       </section>
-    </article>
+    </div>
   </main>
 
   <footer>
-    <p>
-      <a href="https://petrapos.com" title="Halı yıkama takip programı ve halı yıkama takip uygulaması">
-        <strong>Halı yıkama takip programı – PetraPOS</strong>
-      </a>
-      <br />
-      Halı Takip Uygulaması | Halı Yıkama Otomasyon Yazılımı
-      <br />
-      <small>© 2025 PetraPOS. Tüm hakları saklıdır.</small>
-    </p>
-    <p>
-      <a href="https://petrapos.com/tr/privacy-policy">Gizlilik Politikası</a>
-      |
-      <a href="https://petrapos.com/tr/terms-of-service">
-        Kullanım Koşulları
-      </a>
-    </p>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="/">Ana Sayfa</a>
+        <a href="/ozellikler/">Özellikler</a>
+        <a href="/fiyatlandirma/">Fiyatlandırma</a>
+        <a href="/iletisim/">İletişim</a>
+        <a href="https://petrapos.com/tr/privacy-policy" target="_blank">Gizlilik Politikası</a>
+        <a href="https://petrapos.com/tr/terms-of-service" target="_blank">Kullanım Koşulları</a>
+      </div>
+      <p>
+        <strong>PetraPOS</strong> - Halı Takip Programı | Halı Yıkama Sipariş Takip Uygulaması
+      </p>
+      <p>
+        <small>© 2026 PetraPOS. Tüm hakları saklıdır.</small>
+      </p>
+    </div>
   </footer>
 </body>
 
